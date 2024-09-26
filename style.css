@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "General Sans"; */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.bounding {
+    overflow: hidden;
+    display: inline-block;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+#main{
+    width: 100%;
+    background-color: black;
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* vh stands for view port*/
+    background-color: black;
+    color: white;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#heading{
+ margin-top: 90px;
+}
+
+#heading h1{
+    opacity: .6;
+    font-family: "Open Sans", sans-serif;
+    font-size: 9vw;  /* vw used as jb size chota bda hoga vw khud adjust kr lega apne text ko */
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 30px;
+}
+
+#heading #secondh1{
+    margin-left: 210px;
+}
+
+.blocktext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+    
+
+.blocktext h5{
+    text-align: right;
+    font-size: 15px;
+}
+
+#smallHeadings {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 100px;
+    padding-right: 30px;
+}
+#smallHeadings h5{
+    margin-top: .5vw;
+    text-align: right !important;
+    font-size: 1vw;
+}
+
+#herofooter{ 
+    position: absolute;
+    width: 100%;
+    padding: 0 2vw;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#herofooter a{
+    color: white;
+    text-decoration: none;
+}
+
+#herofooter .circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#iconset{
+    display: flex;
+    color: black;
+    gap: 5px
+}
+
+#second{
+    color: rgb(163, 163, 163);
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+    padding-top: 200px;
+    font-family: "Open Sans", sans-serif;
+    padding-right: 10vw;
+}
+
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid grey;
+}
+
+.elem h1{
+    text-transform: uppercase;
+    font-size: 7.6vw ;
+    font-weight: 600;
+    opacity: .7;
+
+}
+
+.elemlast{
+    border-bottom: 1px solid grey;
+}
+.elem img{
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    pointer-events: none;
+}
+
+#about{
+    gap: 50px;
+    padding-left: 40vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10vw 10vw;
+    width: 100%;
+    background-color: black;
+}
+
+#textabout {
+    width: 25rem;
+  
+}
+#textabout p {
+   line-height: 1.7;
+   margin-bottom: 30px;
+  
+}
+
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#about img{
+    width: 200px;
+}
+
+#textabout a{
+    padding: 12px 12px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#subscribe{
+  background-color: black;  
+  color: #fff;
+  padding: 20px 30px;
+  padding-bottom: 7vw;
+}
+
+
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    background-color: black;
+    color: white;
+}
+#footerleft{
+    display: flex;
+    gap: 20;
+}
+#footer a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
